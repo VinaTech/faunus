@@ -35,7 +35,7 @@ public class VerticesMap {
         private boolean processEdges;
 
         @Override
-        public void setup(final Mapper.Context context) throws IOException, InterruptedException {
+        public void setup(final Context context) throws IOException, InterruptedException {
             this.processEdges = context.getConfiguration().getBoolean(PROCESS_EDGES, true);
         }
 

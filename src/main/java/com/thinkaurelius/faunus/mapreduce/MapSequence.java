@@ -25,7 +25,7 @@ public class MapSequence {
         private MemoryMapContext memoryContext;
 
         @Override
-        public void setup(final Mapper.Context context) throws IOException, InterruptedException {
+        public void setup(final Context context) throws IOException, InterruptedException {
             if (this.mappers.size() == 0) {
                 try {
                     final MemoryMapContext memoryContext = new MemoryMapContext(context);
@@ -80,6 +80,8 @@ public class MapSequence {
                 }
 
             } catch (final Exception e) {
+            	System.err.println(e);
+            	System.out.println(e);
                 throw new IOException(e.getMessage(), e);
             }
         }
