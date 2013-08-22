@@ -19,7 +19,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <sesame.version>2.6.10</sesame.version>
-    <tinkerpop.version>2.3.0</tinkerpop.version>
+    <tinkerpop.version>2.4.0</tinkerpop.version>
     <hadoop.core.version>2.0.0-mr1-cdh4.1.2</hadoop.core.version>
     <hadoop.version>2.0.0-mr1-cdh4.1.2</hadoop.version>
     <titan.version>0.4.0-SNAPSHOT</titan.version>
@@ -76,6 +76,11 @@
       <artifactId>pig</artifactId>
       <version>0.10.0-cdh4.1.2</version>
     </dependency>              -->
+    <dependency>
+            <groupId>com.tinkerpop.blueprints</groupId>
+            <artifactId>blueprints-sail-graph</artifactId>
+            <version>${tinkerpop.version}</version>
+        </dependency>
     <dependency>
       <groupId>com.tinkerpop.blueprints</groupId>
       <artifactId>blueprints-core</artifactId>
