@@ -510,26 +510,26 @@
                         </executions>
                     </plugin>
 
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>wagon-maven-plugin</artifactId>
-                        <version>1.0-beta-4</version>
-                        <executions>
-                            <execution>
-                                <id>deploy-distribution-archives-to-s3</id>
-                                <phase>deploy</phase>
-                                <goals>
-                                    <goal>upload</goal>
-                                </goals>
-                                <configuration>
-                                    <fromDir>${project.build.directory}</fromDir>
-                                    <includes>${project.artifactId}-${project.version}.zip*,${project.artifactId}-${project.version}.tar.bz2*</includes>
-                                    <serverId>aurelius.s3</serverId> <!-- your ~/.m2/settings.xml must match -->
-                                    <url>s3://s3.thinkaurelius.com/downloads/faunus/</url>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
+<!--                     <plugin> -->
+<!--                         <groupId>org.codehaus.mojo</groupId> -->
+<!--                         <artifactId>wagon-maven-plugin</artifactId> -->
+<!--                         <version>1.0-beta-4</version> -->
+<!--                         <executions> -->
+<!--                             <execution> -->
+<!--                                 <id>deploy-distribution-archives-to-s3</id> -->
+<!--                                 <phase>deploy</phase> -->
+<!--                                 <goals> -->
+<!--                                     <goal>upload</goal> -->
+<!--                                 </goals> -->
+<!--                                 <configuration> -->
+<!--                                     <fromDir>${project.build.directory}</fromDir> -->
+<!--                                     <includes>${project.artifactId}-${project.version}.zip*,${project.artifactId}-${project.version}.tar.bz2*</includes> -->
+<!--                                     <serverId>aurelius.s3</serverId> your ~/.m2/settings.xml must match -->
+<!--                                     <url>s3://s3.thinkaurelius.com/downloads/faunus/</url> -->
+<!--                                 </configuration> -->
+<!--                             </execution> -->
+<!--                         </executions> -->
+<!--                     </plugin> -->
                 </plugins>
             </build>
         </profile>
