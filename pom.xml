@@ -180,27 +180,13 @@
 	<repositories>
 		<repository>
 			<id>central</id>
-			<url>http://192.168.1.209:8081/nexus/content/repositories/central/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
-		<repository>
-			<id>cloudera</id>
-			<name>Cloudera repository</name>
-			<url>http://192.168.1.209:8081/nexus/content/repositories/cloudera-repos/</url>
-		</repository>
-		<repository>
-			<id>aduna-repo</id>
-			<name>Aduna repository</name>
-			<url>http://repo.aduna-software.org/maven2/releases</url>
-		</repository>
-		<repository>
-			<id>sonatype-oss-public</id>
-			<url>http://192.168.1.209:8081/nexus/content/repositories/sonatype/</url>
+			<url>http://192.168.1.209:8081/nexus/content/groups/public/</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
 		</repository>
 	</repositories>
 	<build>
